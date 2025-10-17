@@ -1,106 +1,75 @@
-```markdown
+```md
 # Embedded Debug Tool
 
-**Embedded Debug Tool** is a unified system that connects an embedded microcontroller firmware with a Qt-based desktop application.  
-It allows real-time testing, debugging, and communication with hardware devices through UART, SPI, or other interfaces.
+The **Embedded Debug Tool** is designed to simplify debugging and testing processes in embedded systems.  
+It provides an extendable structure compatible with various microcontrollers and communication protocols.
 
----
+## Features
 
-## 🔧 Overview
+- Supports multiple communication protocols (UART, SPI, I²C, etc.)  
+- Modular and easily extendable architecture  
+- CLI and GUI interfaces for flexible interaction  
+- Real-time logging, error tracking, and performance measurement  
+- Simple configuration and customization  
 
-This project provides a complete framework for hardware–software interaction:
-
-- **Qt Desktop Application** – used to manage, trigger, and monitor embedded actions  
-- **Firmware** – runs on the microcontroller, executing timed and state-based actions  
-- **Common Layer (Planned)** – shared message definitions and CRC validation logic  
-
-Both sides communicate through a custom binary protocol with CRC16 integrity checking, supporting sequenced task execution and feedback.
-
----
-
-## 📁 Project Structure
+## Directory Structure
 
 ```
 
-embedded-debug-tool/
-│
-├── qt_app/           # Qt-based desktop interface (C++/Qt6)
-├── firmware/         # MCU firmware source code
-├── common/           # Shared protocol headers (planned)
-├── docs/             # Diagrams and protocol documentation
-└── README.md         # This file
+/
+├── docs/               # Project documentation
+├── examples/           # Usage examples and demo codes
+├── src/                # Source files
+│   ├── protocol/       # Protocol modules (UART, SPI, I2C, etc.)
+│   ├── interface/      # User interfaces (CLI, GUI)
+│   ├── utils/          # Utility functions, logging, etc.
+│   └── main/           # Application entry point
+├── tests/              # Unit and integration tests
+├── scripts/            # Helper scripts (build, install, etc.)
+└── README.md           # Main project description (this file)
 
 ````
 
----
+## Installation
 
-## ⚙️ Features
-
-- Modular **Action–Set System** for structured test sequences  
-- Multi-state execution logic *(IDLE → PENDING → RUNNING → DONE)*  
-- Deadline management and timer-based scheduling  
-- CRC16-protected serial communication protocol  
-- Easy to extend for new sensors, peripherals, or command types  
-- Unified design for both MCU and PC-side debugging  
-
----
-
-## 🚀 Build Instructions
-
-### Qt Desktop Application
-
-```bash
-cd qt_app
-mkdir build && cd build
-cmake ..
-cmake --build .
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/Tuncayarda/Embedded_Debug_Tool.git
 ````
 
-### Embedded Firmware
+2. Install dependencies (e.g., Python packages or C/C++ libraries):
 
-Import the `firmware/` folder into **MCUXpresso**, **STM32CubeIDE**, or build manually:
+   ```bash
+   cd Embedded_Debug_Tool
+   ./scripts/install_dependencies.sh
+   ```
+3. Build and run the project:
+
+   ```bash
+   ./scripts/build.sh
+   ./scripts/run.sh
+   ```
+
+## Usage
+
+Each protocol and tool includes example usage files under the `examples/` directory.
+For example, to start a UART debugging session:
 
 ```bash
-cd firmware
-cmake -DCMAKE_TOOLCHAIN_FILE=toolchains/arm-gcc.cmake ..
-make
+cd examples/uart
+./run_uart_debug.sh
 ```
 
----
+## Contributing
 
-## 🧠 Execution Concept
+* Feel free to open an **Issue** or submit a **Pull Request** to contribute.
+* Follow the project’s coding standards and formatting rules.
+* Make sure to include relevant tests for every new feature or module.
 
-The firmware uses a cyclic execution loop controlled by PIT timers and GPIO triggers.
-Each action progresses through specific states:
+## License
+
+This project is licensed under the **MIT License**.
+See the `LICENSE` file for more information.
 
 ```
-IDLE → PENDING → RUNNING → DONE
-```
-
-The Qt application supervises these transitions and visualizes the process in real time.
-
-A simplified flow of the firmware execution is shown below:
-
-![Execution Flow](docs/execution_flow.png)
-
----
-
-## 🧱 Tech Stack
-
-| Layer    | Technology                       |
-| -------- | -------------------------------- |
-| Desktop  | Qt6 (Widgets, SerialPort), CMake |
-| Firmware | C/C++, MCU SDK (Kinetis / STM32) |
-| Protocol | Custom binary frame with CRC16   |
-
----
-
-## 🧩 Future Work
-
-* Shared `common/` protocol header for Qt & firmware synchronization
-* GUI configuration for complex action sets
-* Logging and real-time plotting system
-* CI/CD automation for firmware and desktop builds
-
----
 ```
