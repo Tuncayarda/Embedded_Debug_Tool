@@ -12,13 +12,14 @@ This project provides a complete framework for hardware–software interaction:
 
 - **Qt Desktop Application** – used to manage, trigger, and monitor embedded actions  
 - **Firmware** – runs on the microcontroller, executing timed and state-based actions  
-- **Common Layer (Planned)** – shared message definitions and CRC validation logic
+- **Common Layer (Planned)** – shared message definitions and CRC validation logic  
 
 Both sides communicate through a custom binary protocol with CRC16 integrity checking, supporting sequenced task execution and feedback.
 
 ---
 
 ## 📁 Project Structure
+
 ```
 
 embedded-debug-tool/
@@ -36,17 +37,18 @@ embedded-debug-tool/
 ## ⚙️ Features
 
 - Modular **Action–Set System** for structured test sequences  
-- Multi-state execution logic (IDLE → PENDING → RUNNING → DONE)  
+- Multi-state execution logic *(IDLE → PENDING → RUNNING → DONE)*  
 - Deadline management and timer-based scheduling  
 - CRC16-protected serial communication protocol  
 - Easy to extend for new sensors, peripherals, or command types  
-- Unified design for both MCU and PC-side debugging
+- Unified design for both MCU and PC-side debugging  
 
 ---
 
 ## 🚀 Build Instructions
 
 ### Qt Desktop Application
+
 ```bash
 cd qt_app
 mkdir build && cd build
@@ -101,3 +103,4 @@ A simplified flow of the firmware execution is shown below:
 * CI/CD automation for firmware and desktop builds
 
 ---
+```
