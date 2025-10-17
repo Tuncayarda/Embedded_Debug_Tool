@@ -1,5 +1,3 @@
-Tabii kanka 💪 işte sadece **ana sayfa (root)** için tamamen İngilizce, profesyonel ve GitHub’a direkt koyabileceğin **README.md** içeriği:
-
 ---
 
 ```markdown
