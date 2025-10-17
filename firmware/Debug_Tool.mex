@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<configuration name="" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_18 http://mcuxpresso.nxp.com/XSD/mex_configuration_18.xsd" uuid="93fc7dec-8943-4d2d-9cb2-d773520688ef" version="18" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_18" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <common>
+      <processor>MK02FN128xxx10</processor>
+      <package>MK02FN128VFM10</package>
+      <mcu_data>ksdk2_0</mcu_data>
+      <cores selected="core0">
+         <core name="Cortex-M4F" id="core0" description="M4 core"/>
+      </cores>
+      <description>Configuration imported from Debug_Tool</description>
+   </common>
+   <preferences>
+      <validate_boot_init_only>true</validate_boot_init_only>
+      <generate_code_modified_registers_only>false</generate_code_modified_registers_only>
+      <update_include_paths>true</update_include_paths>
+      <enable_parallel_routing>true</enable_parallel_routing>
+      <generate_registers_defines>false</generate_registers_defines>
+   </preferences>
+   <tools>
+      <pins name="Pins" version="17.0" enabled="true" update_project_code="true">
+         <generated_project_files>
+            <file path="board/pin_mux.c" update_enabled="true"/>
+            <file path="board/pin_mux.h" update_enabled="true"/>
+         </generated_project_files>
+         <pins_profile>
+            <processor_version>25.06.10</processor_version>
+            <external_user_signals>
+               <properties/>
+            </external_user_signals>
+         </pins_profile>
+         <functions_list>
+            <function name="BOARD_InitPins">
+               <description></description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>core0</coreID>
+                  <enableClock>true</enableClock>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART0" description="Peripheral UART0 signals are routed in the Pins Tool, but the peripheral is not initialized in the Peripherals Tool." problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="SPI0" description="Peripheral SPI0 signals are routed in the Pins Tool, but the peripheral is not initialized in the Peripherals Tool." problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Pins initialization requires the COMMON Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.port" description="Pins initialization requires the PORT Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART0" signal="RX" pin_num="31" pin_signal="ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH0/FTM0_FLT0"/>
+                  <pin peripheral="UART0" signal="TX" pin_num="32" pin_signal="PTD7/UART0_TX/FTM0_CH1/FTM0_FLT1"/>
+                  <pin peripheral="SPI0" signal="SCK" pin_num="26" pin_signal="PTC5/LLWU_P9/SPI0_SCK/LPTMR0_ALT2/CMP0_OUT/FTM0_CH2">
+                     <pin_features>
+                        <pin_feature name="slew_rate" value="slow"/>
+                        <pin_feature name="pull_enable" value="enable"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="SPI0" signal="SIN" pin_num="28" pin_signal="CMP0_IN1/PTC7/SPI0_SIN">
+                     <pin_features>
+                        <pin_feature name="slew_rate" value="slow"/>
+                        <pin_feature name="pull_enable" value="enable"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="SPI0" signal="SOUT" pin_num="27" pin_signal="CMP0_IN0/PTC6/LLWU_P10/SPI0_SOUT/PDB0_EXTRG">
+                     <pin_features>
+                        <pin_feature name="slew_rate" value="slow"/>
+                        <pin_feature name="pull_enable" value="enable"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="SPI0" signal="PCS0_SS" pin_num="25" pin_signal="PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/CMP1_OUT">
+                     <pin_features>
+                        <pin_feature name="slew_rate" value="slow"/>
+                        <pin_feature name="pull_select" value="up"/>
+                        <pin_feature name="pull_enable" value="enable"/>
+                     </pin_features>
+                  </pin>
+               </pins>
+            </function>
+         </functions_list>
+      </pins>
+      <clocks name="Clocks" version="17.0" enabled="true" update_project_code="true">
+         <generated_project_files>
+            <file path="board/clock_config.c" update_enabled="true"/>
+            <file path="board/clock_config.h" update_enabled="true"/>
+         </generated_project_files>
+         <clocks_profile>
+            <processor_version>25.06.10</processor_version>
+         </clocks_profile>
+         <clock_configurations>
+            <clock_configuration name="BOARD_BootClockRUN" id_prefix="" prefix_user_defined="false">
+               <description></description>
+               <options/>
+               <dependencies>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Clocks initialization requires the COMMON Driver in the project." problem_level="2" source="Clocks:BOARD_BootClockRUN">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <clock_sources>
+                  <clock_source id="IRC48M.IRC48M.outFreq" value="48 MHz" locked="false" enabled="false"/>
+               </clock_sources>
+               <clock_outputs>
+                  <clock_output id="Bus_clock.outFreq" value="35.995648 MHz" locked="false" accuracy=""/>
+                  <clock_output id="Core_clock.outFreq" value="71.991296 MHz" locked="false" accuracy=""/>
+                  <clock_output id="Flash_clock.outFreq" value="17.997824 MHz" locked="false" accuracy=""/>
+                  <clock_output id="IRC48MCLK.outFreq" value="48 MHz" locked="false" accuracy=""/>
+                  <clock_output id="LPO_clock.outFreq" value="1 kHz" locked="false" accuracy=""/>
+                  <clock_output id="MCGFFCLK.outFreq" value="32.768 kHz" locked="false" accuracy=""/>
+                  <clock_output id="PLLFLLCLK.outFreq" value="71.991296 MHz" locked="false" accuracy=""/>
+                  <clock_output id="System_clock.outFreq" value="71.991296 MHz" locked="false" accuracy=""/>
+               </clock_outputs>
+               <clock_settings>
+                  <setting id="MCG.FCRDIV.scale" value="2" locked="true"/>
+                  <setting id="MCG.FLL_mul.scale" value="2197" locked="true"/>
+                  <setting id="MCG.FRDIV.scale" value="4" locked="true"/>
+                  <setting id="MCG.OSCSEL.sel" value="SIM.IRC48MCLK" locked="false"/>
+                  <setting id="SIM.OUTDIV1.scale" value="1" locked="true"/>
+                  <setting id="SIM.OUTDIV2.scale" value="2" locked="true"/>
+                  <setting id="SIM.OUTDIV4.scale" value="4" locked="true"/>
+               </clock_settings>
+               <called_from_default_init>true</called_from_default_init>
+            </clock_configuration>
+         </clock_configurations>
+      </clocks>
+      <dcdx name="DCDx" version="4.0" enabled="false" update_project_code="true">
+         <generated_project_files/>
+         <dcdx_profile>
+            <processor_version>N/A</processor_version>
+         </dcdx_profile>
+         <dcdx_configurations/>
+      </dcdx>
+      <periphs name="Peripherals" version="15.0" enabled="true" update_project_code="true">
+         <dependencies>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.edma" description="EDMA Driver is not found in the toolchain/IDE project. The project will not compile!" problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.edma" description="An unsupported version of the EDMA Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}. The project might not compile correctly." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="greaterOrEqual">
+                  <data type="Version" maxValue="2.4.9">2.4.0</data>
+               </feature>
+            </dependency>
+         </dependencies>
+         <generated_project_files>
+            <file path="board/peripherals.c" update_enabled="true"/>
+            <file path="board/peripherals.h" update_enabled="true"/>
+         </generated_project_files>
+         <peripherals_profile>
+            <processor_version>25.06.10</processor_version>
+         </peripherals_profile>
+         <functional_groups>
+            <functional_group name="BOARD_InitPeripherals" uuid="6b12f652-b565-4083-9908-ad7f7499c86c" called_from_default_init="true" id_prefix="" core="core0">
+               <description></description>
+               <options/>
+               <dependencies>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.dmamux" description="The fsl_dmamux driver is missing in the project (required for the eDMA)." problem_level="2" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="enabled" evaluation="equal">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.dmamux" description="The compatible version of the fsl_dmamux driver is not available in the project (required for the eDMA)." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="version" evaluation="compatible">
+                        <data type="Version">2.0.2</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <instances>
+                  <instance name="NVIC" uuid="1a843cae-ebf6-4e31-8b66-6506c03d99a1" type="nvic" type_id="nvic" mode="general" peripheral="NVIC" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="nvic">
+                        <array name="interrupt_table"/>
+                        <array name="interrupts"/>
+                     </config_set>
+                  </instance>
+                  <instance name="DMA" uuid="741fb967-8424-40d1-9f0a-f9d16f1e217b" type="edma" type_id="edma_2.4.0" mode="basic" peripheral="DMA" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="fsl_edma">
+                        <struct name="common_settings">
+                           <setting name="enableMinorLoopMapping" value="false"/>
+                           <setting name="enableContinuousLinkMode" value="false"/>
+                           <setting name="enableHaltOnError" value="true"/>
+                           <setting name="ERCA" value="fixedPriority"/>
+                           <setting name="enableDebugMode" value="true"/>
+                        </struct>
+                        <array name="dma_table">
+                           <struct name="0"/>
+                        </array>
+                        <array name="edma_channels">
+                           <struct name="0">
+                              <setting name="apiMode" value="nontransTCD"/>
+                              <struct name="edma_channel">
+                                 <setting name="channel_prefix_id" value="CH0"/>
+                                 <setting name="uid" value="1758780798996"/>
+                                 <setting name="eDMAn" value="0"/>
+                                 <setting name="eDMA_source" value="kDmaRequestMux0UART0Rx"/>
+                                 <setting name="enableTriggerPIT" value="false"/>
+                                 <setting name="init_channel_priority" value="false"/>
+                                 <struct name="edma_channel_Preemption">
+                                    <setting name="enableChannelPreemption" value="false"/>
+                                    <setting name="enablePreemptAbility" value="false"/>
+                                    <setting name="channelPriority" value="0"/>
+                                 </struct>
+                              </struct>
+                              <setting name="resetChannel" value="true"/>
+                              <setting name="enableChannelRequest" value="true"/>
+                              <setting name="enableAsyncRequest" value="false"/>
+                              <array name="tcd_configuration">
+                                 <struct name="0">
+                                    <setting name="uid" value="1758780799003"/>
+                                    <setting name="tcdID" value="CH0_TCD0"/>
+                                    <setting name="ssize" value="kEDMA_TransferSize1Bytes"/>
+                                    <setting name="saddr_expr" value="&amp;UART0-&gt;D"/>
+                                    <setting name="saddr_def" value=""/>
+                                    <setting name="soff" value="0"/>
+                                    <setting name="soff_def" value=""/>
+                                    <setting name="smod" value="kEDMA_ModuloDisable"/>
+                                    <setting name="dsize" value="kEDMA_TransferSize1Bytes"/>
+                                    <setting name="daddr_expr" value="&amp;rxRing[0]"/>
+                                    <setting name="daddr_def" value="#include &quot;uart/uart.h&quot;"/>
+                                    <setting name="doff" value="1"/>
+                                    <setting name="doff_def" value=""/>
+                                    <setting name="dmod" value="kEDMA_Modulo1Kbytes"/>
+                                    <setting name="nbytes" value="1"/>
+                                    <struct name="MLconfig">
+                                       <setting name="offsetType" value="disabled"/>
+                                       <setting name="mloff" value="0"/>
+                                    </struct>
+                                    <setting name="enableChannelLinkMinor" value="false"/>
+                                    <setting name="linkedChannelMinor" value="1758780798996"/>
+                                    <setting name="bandwidthControl" value="disabled"/>
+                                    <setting name="citer" value="1024"/>
+                                    <setting name="slast" value="0"/>
+                                    <setting name="enableChannelLinkMajor" value="false"/>
+                                    <setting name="linkedChannelMajor" value="1758780798996"/>
+                                    <setting name="disableERQ" value="false"/>
+                                    <setting name="enableScatterGather" value="true"/>
+                                    <setting name="sga" value="1758780799003"/>
+                                    <set name="interruptSources">
+                                       <selected/>
+                                    </set>
+                                 </struct>
+                              </array>
+                              <setting name="constantTCD" value="false"/>
+                              <setting name="no_init_uid" value="1758780799002"/>
+                              <setting name="initializedTCD" value="1758780799003"/>
+                              <set name="channel_enabled_interrupts">
+                                 <selected/>
+                              </set>
+                              <setting name="init_interruptsEnable" value="false"/>
+                              <struct name="interrupt_channel">
+                                 <setting name="IRQn" value="DMA0_IRQn"/>
+                                 <setting name="enable_interrrupt" value="enabled"/>
+                                 <setting name="enable_priority" value="false"/>
+                                 <setting name="priority" value="0"/>
+                                 <setting name="enable_custom_name" value="false"/>
+                              </struct>
+                           </struct>
+                        </array>
+                        <struct name="errInterruptConfig">
+                           <setting name="enableErrInterrupt" value="false"/>
+                           <struct name="errorInterrupt">
+                              <setting name="IRQn" value="DMA_Error_IRQn"/>
+                              <setting name="enable_interrrupt" value="enabled"/>
+                              <setting name="enable_priority" value="false"/>
+                              <setting name="priority" value="0"/>
+                              <setting name="enable_custom_name" value="false"/>
+                           </struct>
+                        </struct>
+                     </config_set>
+                  </instance>
+               </instances>
+            </functional_group>
+         </functional_groups>
+         <components>
+            <component name="system" uuid="96ec0fee-2ee9-4c76-be8f-5d104f1a484e" type_id="system">
+               <config_set_global name="global_system_definitions">
+                  <setting name="user_definitions" value=""/>
+                  <setting name="user_includes" value=""/>
+                  <setting name="global_init" value=""/>
+               </config_set_global>
+            </component>
+            <component name="generic_enet" uuid="8f4e001d-b1fc-4bdc-9111-f451b4475ddf" type_id="generic_enet">
+               <config_set_global name="global_enet"/>
+            </component>
+            <component name="gpio_adapter_common" uuid="8e3e1d1f-6c22-49eb-8400-5ee28a3eedba" type_id="gpio_adapter_common">
+               <config_set_global name="global_gpio_adapter_common" quick_selection="default"/>
+            </component>
+            <component name="generic_uart" uuid="410d1e3c-a517-49a0-9459-ecbdbefcdc46" type_id="generic_uart">
+               <config_set_global name="global_uart"/>
+            </component>
+            <component name="msg" uuid="fadecba5-cfac-4a73-9105-3af3688c7f09" type_id="msg">
+               <config_set_global name="global_messages"/>
+            </component>
+            <component name="uart_cmsis_common" uuid="daab1603-526f-4440-b9a8-e786cdcc91a0" type_id="uart_cmsis_common">
+               <config_set_global name="global_USART_CMSIS_common" quick_selection="default"/>
+            </component>
+            <component name="generic_can" uuid="30ae44b5-6239-4875-972e-3855fb43e086" type_id="generic_can">
+               <config_set_global name="global_can"/>
+            </component>
+         </components>
+      </periphs>
+      <tee name="TEE" version="9.0" enabled="false" update_project_code="true">
+         <generated_project_files/>
+         <tee_profile>
+            <processor_version>N/A</processor_version>
+         </tee_profile>
+      </tee>
+   </tools>
+</configuration>

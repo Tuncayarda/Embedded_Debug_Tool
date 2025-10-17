@@ -1,0 +1,13 @@
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/CMSIS/core_cm4.h:1794:22:__NVIC_EnableIRQ	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/CMSIS/core_cm4.h:1924:22:__NVIC_SetPriority	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_common_arm.h:672:24:EnableIRQ	24	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_pit.h:150:20:PIT_GetDefaultConfig	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_pit.h:204:20:PIT_EnableInterrupts	24	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_pit.h:306:20:PIT_ClearStatusFlags	24	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_pit.h:387:20:PIT_SetTimerPeriod	24	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_pit.h:483:20:PIT_StartTimer	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_pit.h:497:20:PIT_StopTimer	16	static
+../source/execute/tick_init.c:13:6:PIT0_IRQHandler	8	static
+../source/execute/tick_init.c:20:6:tick_init	24	static
+../source/execute/tick_init.c:36:6:tick_start	8	static
+../source/execute/tick_init.c:41:6:tick_stop	8	static

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SerialMonitor</class>
+ <widget class="QWidget" name="SerialMonitor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>823</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Menlo</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QCheckBox" name="checkBoxHex">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>420</y>
+     <width>85</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hex</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>800</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Menlo</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="txCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>420</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TX</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="rxCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>420</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RX</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearButton">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>415</y>
+     <width>41</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CLR</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

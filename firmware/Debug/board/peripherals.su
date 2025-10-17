@@ -1,0 +1,7 @@
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_edma.h:348:20:EDMA_EnableMinorLoopMapping	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_edma.h:711:20:EDMA_EnableChannelRequest	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dmamux.h:85:20:DMAMUX_EnableChannel	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dmamux.h:139:20:DMAMUX_SetSource	24	static
+../board/peripherals.c:171:13:DMA_init	8	static
+../board/peripherals.c:215:6:BOARD_InitPeripherals	8	static
+../board/peripherals.c:228:6:BOARD_InitBootPeripherals	8	static

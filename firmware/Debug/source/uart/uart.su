@@ -1,0 +1,5 @@
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_uart.h:574:20:UART_EnableRxDMA	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dmamux.h:85:20:DMAMUX_EnableChannel	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dmamux.h:139:20:DMAMUX_SetSource	24	static
+../source/uart/uart.c:12:13:uart_tx_cb	24	static
+../source/uart/uart.c:26:6:uart0_init	32	static

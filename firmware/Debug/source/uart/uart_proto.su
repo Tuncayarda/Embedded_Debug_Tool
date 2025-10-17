@@ -1,0 +1,3 @@
+../source/uart/uart_proto.c:27:6:proto_rx_reset	4	static
+../source/uart/uart_proto.c:36:20:crc16_feed	16	static
+../source/uart/uart_proto.c:40:5:proto_rx_poll	32	static

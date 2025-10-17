@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_Debug_ToolV2_FILE /Users/tuncay/Debug_ToolV2/build/Qt_6_9_2_for_macOS-Debug/Debug_ToolV2.app/Contents/MacOS/Debug_ToolV2)
+set(__QT_DEPLOY_TARGET_Debug_ToolV2_TYPE EXECUTABLE)

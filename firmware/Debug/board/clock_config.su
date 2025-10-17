@@ -1,0 +1,4 @@
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_clock.h:719:20:CLOCK_SetSimSafeDivs	4	static
+../board/clock_config.c:68:13:CLOCK_CONFIG_FllStableDelay	16	static
+../board/clock_config.c:80:6:BOARD_InitBootClocks	8	static
+../board/clock_config.c:150:6:BOARD_BootClockRUN	8	static

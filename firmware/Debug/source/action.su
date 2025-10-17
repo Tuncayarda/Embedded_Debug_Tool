@@ -1,0 +1,3 @@
+../source/action.c:12:24:u16be	16	static
+../source/action.c:14:6:free_actions	24	static
+../source/action.c:35:5:parse_actions	88	static

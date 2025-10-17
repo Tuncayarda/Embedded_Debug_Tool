@@ -1,0 +1,15 @@
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/CMSIS/core_cm4.h:1794:22:__NVIC_EnableIRQ	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_common_arm.h:672:24:EnableIRQ	24	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:564:24:DSPI_GetStatusFlags	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:582:20:DSPI_ClearStatusFlags	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:622:20:DSPI_DisableInterrupts	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:757:20:DSPI_StartTransfer	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:768:20:DSPI_StopTransfer	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:797:20:DSPI_FlushFifo	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:1041:20:DSPI_SlaveWriteData	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:1066:24:DSPI_ReadData	16	static
+../source/spi/spi_init.c:35:24:rb_count	16	static
+../source/spi/spi_init.c:42:24:rb_free	16	static
+../source/spi/spi_init.c:51:8:cspi_tx_push	40	static
+../source/spi/spi_init.c:88:6:SPI0_IRQHandler	56	static
+../source/spi/spi_init.c:194:6:spi_init	32	static

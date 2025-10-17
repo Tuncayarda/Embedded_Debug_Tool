@@ -1,0 +1,5 @@
+../drivers/fsl_clock.h:551:20:CLOCK_EnableClock	24	static
+../drivers/fsl_clock.h:562:20:CLOCK_DisableClock	24	static
+../drivers/fsl_pit.c:44:17:PIT_GetInstance	24	static
+../drivers/fsl_pit.c:71:6:PIT_Init	24	static
+../drivers/fsl_pit.c:118:6:PIT_Deinit	16	static

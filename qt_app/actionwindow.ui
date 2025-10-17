@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddActionWindow</class>
+ <widget class="QDialog" name="AddActionWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Menlo</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="addButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>280</y>
+     <width>90</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="actionBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>121</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>DELAY</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PIN_READ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PIN_WRITE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PIN_TRIGGER</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>201</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="delay_page">
+    <widget class="QFrame" name="frame_delay">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>201</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_duration_d">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_duration_d">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Duration(ms):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_dependency_d">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_dependency_d">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dependency:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pin_read_page">
+    <widget class="QFrame" name="frame_read">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>201</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QWidget" name="w_final_r" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label_rfinal">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Final Level:</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="finalRHButton">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>10</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="finalRLButton">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>10</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>L</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="w_initial_r" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <widget class="QRadioButton" name="initialRLButton">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>0</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>L</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_rinitial">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Initial Level: </string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="initialRHButton">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>0</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="w_target_r" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>100</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <widget class="QRadioButton" name="targetRLButton">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>0</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>L</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="targetRHButton">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>0</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_rtarget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Target Level:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_pin_no_r">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pin No:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_duration_r">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Duration(ms):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_duration_r">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>160</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_r">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>40</y>
+        <width>81</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="displayIntegerBase">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_dependency_r">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>190</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_dependency_r">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dependency:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_port_r">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Port:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_port_r">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>5</y>
+        <width>91</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>PORT A</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT B</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT D</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT E</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT F</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pin_write_page">
+    <widget class="QFrame" name="frame_write">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>201</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QWidget" name="w_final_w" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>130</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <widget class="QRadioButton" name="finalWLButton">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>0</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>L</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="finalWHButton">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>0</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_wfinal">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Final Level:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="w_initial_w" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <widget class="QRadioButton" name="initialWLButton">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>0</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>L</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="initialWHButton">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>0</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_winitial">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Initial Level: </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="w_target_w" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>100</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <widget class="QRadioButton" name="targetWLButton">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>0</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>L</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="targetWHButton">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>0</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_wtarget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Target Level:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_w">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>40</y>
+        <width>81</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_dependency_w">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>190</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_duration_w">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Duration(ms):</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_dependency_w">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dependency:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_duration_w">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>160</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pin_no_w">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pin No:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_port_w">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>5</y>
+        <width>91</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>PORT A</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT B</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT D</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT E</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT F</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_port_r_w">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Port:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pin_trigger_page">
+    <widget class="QFrame" name="frame_trigger">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>201</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QWidget" name="w_target_t" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <widget class="QRadioButton" name="targetTHButton">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>10</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="targetTLButton">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>10</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>L</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_pin_no_t">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pin No:</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="w_initial_t" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <widget class="QRadioButton" name="initialTHButton">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>10</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="initialTLButton">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>10</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>L</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_t">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>40</y>
+        <width>81</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="displayIntegerBase">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_port_t">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>5</y>
+        <width>91</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>PORT A</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT B</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT D</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT E</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PORT F</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_port_t">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Port:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_timeout_t">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Timeout(ms):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_timeout_t">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>130</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_dependency_t">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>160</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_dependency_t">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dependency:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ttarget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Target Level:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_tinitial">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Initial Level: </string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>90</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

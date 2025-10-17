@@ -1,0 +1,908 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Debug_ToolV2.app/Contents/MacOS/Debug_ToolV2"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"_qt_internal_create_executable",
+			"qt6_add_executable",
+			"qt_add_executable",
+			"install",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"find_dependency",
+			"_qt_internal_find_qt_dependencies"
+		],
+		"files" : 
+		[
+			"/Users/tuncay/Qt/6.9.2/macos/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"CMakeLists.txt",
+			"/Users/tuncay/Qt/6.9.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"/Users/tuncay/Qt/6.9.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"build/Qt_6_9_2_for_macOS-Debug/.qtc/package-manager/maintenance_tool_provider.cmake",
+			"/Users/tuncay/Qt/6.9.2/macos/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"/Users/tuncay/Qt/6.9.2/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"/Users/tuncay/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+			"/Users/tuncay/Qt/6.9.2/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"/Users/tuncay/Qt/6.9.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"/Users/tuncay/Qt/6.9.2/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"/Users/tuncay/Qt/6.9.2/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 967,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 638,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 714,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 114,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 97,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 297,
+				"parent" : 7
+			},
+			{
+				"file" : 3,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 55,
+				"parent" : 9
+			},
+			{
+				"file" : 2,
+				"parent" : 10
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 62,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 43,
+				"parent" : 9
+			},
+			{
+				"file" : 9,
+				"parent" : 13
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 45,
+				"parent" : 14
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 142,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 315,
+				"parent" : 17
+			},
+			{
+				"file" : 6,
+				"parent" : 18
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 55,
+				"parent" : 19
+			},
+			{
+				"file" : 5,
+				"parent" : 20
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 62,
+				"parent" : 21
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 639,
+				"parent" : 2
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 142,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 24
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 315,
+				"parent" : 25
+			},
+			{
+				"file" : 11,
+				"parent" : 26
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 57,
+				"parent" : 27
+			},
+			{
+				"file" : 10,
+				"parent" : 28
+			},
+			{
+				"command" : 6,
+				"file" : 10,
+				"line" : 62,
+				"parent" : 29
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 23,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_SERIALPORT_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_WIDGETS_LIB"
+				}
+			],
+			"frameworks" : 
+			[
+				{
+					"backtrace" : 23,
+					"isSystem" : true,
+					"path" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtCore.framework"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtWidgets.framework"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtGui.framework"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtSerialPort.framework"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "/Users/tuncay/Debug_ToolV2/build/Qt_6_9_2_for_macOS-Debug/Debug_ToolV2_autogen/include"
+				},
+				{
+					"backtrace" : 23,
+					"isSystem" : true,
+					"path" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtCore.framework/Headers"
+				},
+				{
+					"backtrace" : 23,
+					"isSystem" : true,
+					"path" : "/Users/tuncay/Qt/6.9.2/macos/mkspecs/macx-clang"
+				},
+				{
+					"backtrace" : 23,
+					"isSystem" : true,
+					"path" : "/Users/tuncay/Qt/6.9.2/macos/include"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtWidgets.framework/Headers"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtGui.framework/Headers"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtSerialPort.framework/Headers"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					23,
+					23
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				6,
+				8,
+				10,
+				12,
+				13,
+				14,
+				15,
+				17,
+				19,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				44,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Debug_ToolV2_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Debug_ToolV2_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "Debug_ToolV2::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "."
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/tmp"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-DQT_QML_DEBUG -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-F/Users/tuncay/Qt/6.9.2/macos/lib",
+				"role" : "frameworkPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/Users/tuncay/Qt/6.9.2/macos/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtWidgets.framework/Versions/A/QtWidgets",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtSerialPort.framework/Versions/A/QtSerialPort",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtGui.framework/Versions/A/QtGui",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "-framework AppKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "-framework OpenGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "-framework ImageIO",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "-framework Metal",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "/Users/tuncay/Qt/6.9.2/macos/lib/QtCore.framework/Versions/A/QtCore",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "-framework IOKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "-framework DiskArbitration",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "-framework UniformTypeIdentifiers",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Debug_ToolV2",
+	"nameOnDisk" : "Debug_ToolV2",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				6,
+				8,
+				10,
+				12,
+				13,
+				14,
+				15,
+				17,
+				19,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				44,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				3,
+				5,
+				7,
+				9,
+				16,
+				20,
+				43,
+				53,
+				54,
+				55,
+				56
+			]
+		},
+		{
+			"name" : "Forms",
+			"sourceIndexes" : 
+			[
+				4,
+				11,
+				18,
+				45
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				57
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				58
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_2_for_macOS-Debug/Debug_ToolV2_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "mainwindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "mainwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "mainwindow.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "actionset.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "actionset.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "action.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/main/addAction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "actionwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "actionwindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "actionwindow.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/main/rebuildList.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/main/actionInfoLine.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/main/refreshPorts.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/main/connect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "serialmonitor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "serialmonitor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "serialmonitor.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/main/serialMonitor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "actionEncoder.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/main/actionEncoder.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/main/execute.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/main/deleteAction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/action/add.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/action/cancel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/hL.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/parseIds.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/main/editAction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/setEditMode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/setKindPage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/currentKind.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/level.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/csv.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/fillFromAction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/makeAction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/log/logTx.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/log/coloredLog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/main/sendInstruction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/main/writeFlash.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/main/clearFlash.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/main/reset.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/action/parseTime.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "cspiwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "cspiwindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "cspiwindow.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/main/cSPI.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/cspi/set.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/cspi/clr.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/cspi/import.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/cspi/stop.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "utils/main/onSPIStopRequested.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "handlers/cspi/terminate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_2_for_macOS-Debug/Debug_ToolV2_autogen/include/ui_mainwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_2_for_macOS-Debug/Debug_ToolV2_autogen/include/ui_actionwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_2_for_macOS-Debug/Debug_ToolV2_autogen/include/ui_serialmonitor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_2_for_macOS-Debug/Debug_ToolV2_autogen/include/ui_cspiwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_2_for_macOS-Debug/Debug_ToolV2_autogen/timestamp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_2_for_macOS-Debug/Debug_ToolV2_autogen/timestamp.rule",
+			"sourceGroupIndex" : 4
+		}
+	],
+	"type" : "EXECUTABLE"
+}

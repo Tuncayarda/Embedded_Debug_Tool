@@ -1,0 +1,6 @@
+../source/debug.c:11:20:lvl_ch	16	static
+../source/debug.c:17:13:print_targets	24	static
+../source/debug.c:26:13:print_ms_us	24	static
+../source/debug.c:41:13:print_ticks_if_any	16	static
+../source/debug.c:51:6:dump_action_set	24	static
+../source/debug.c:125:6:dump_cspi	16	static

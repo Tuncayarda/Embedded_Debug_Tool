@@ -1,0 +1,7 @@
+../source/action/action.c:12:24:u16be	16	static
+../source/action/action.c:17:24:u32be	16	static
+../source/action/action.c:25:24:msus_to_ticks	88	static
+../source/action/action.c:34:6:free_actions	24	static
+../source/action/action.c:60:5:parse_actions	144	static
+../source/action/action.c:235:5:parse_cspi_begin	24	static
+../source/action/action.c:287:6:free_cspi	16	static

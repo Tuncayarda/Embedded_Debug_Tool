@@ -1,0 +1,7 @@
+../source/execute/execute.c:18:20:arm_deadline	24	static
+../source/execute/execute.c:24:19:tick_reached	16	static
+../source/execute/execute.c:30:6:prepare_targets	24	static
+../source/execute/execute.c:46:5:start_action	32	static
+../source/execute/execute.c:88:5:run_action	24	static
+../source/execute/execute.c:135:20:finish_action	24	static
+../source/execute/execute.c:153:5:execute	32	static

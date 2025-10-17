@@ -1,0 +1,5 @@
+../source/action/action.c:17:24:u32be	0	static
+../source/action/action.c:32:6:free_actions	24	static
+../source/action/action.c:53:5:parse_actions	112	static
+../source/action/action.c:216:5:parse_cspi	24	static
+../source/action/action.c:270:6:free_cspi	8	static

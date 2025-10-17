@@ -1,0 +1,7 @@
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_clock.h:551:20:CLOCK_EnableClock	24	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_port.h:463:20:PORT_SetPinMux	24	static
+../source/execute.c:13:20:enable_port_clock	16	static
+../source/execute.c:24:26:port_base	16	static
+../source/execute.c:35:26:gpio_base	16	static
+../source/execute.c:46:5:init_pins	64	static
+../source/execute.c:104:5:execute	24	static

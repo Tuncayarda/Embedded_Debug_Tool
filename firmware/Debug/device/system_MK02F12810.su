@@ -1,0 +1,3 @@
+../device/system_MK02F12810.c:78:6:SystemInit	8	static
+../device/system_MK02F12810.c:104:6:SystemCoreClockUpdate	16	static
+../device/system_MK02F12810.c:203:29:SystemInitHook	4	static

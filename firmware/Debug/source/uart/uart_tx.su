@@ -1,0 +1,13 @@
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_uart.h:544:20:UART_EnableTxDMA	16	static
+../source/uart/uart_tx.c:37:20:rb_empty	4	static
+../source/uart/uart_tx.c:40:20:rb_full	4	static
+../source/uart/uart_tx.c:46:24:rb_contig_len_from_tail	4	static
+../source/uart/uart_tx.c:62:13:uart0_tx_kick_if_idle	16	static
+../source/uart/uart_tx.c:85:6:uart_tx_on_done	8	static
+../source/uart/uart_tx.c:112:8:uart0_write	32	static
+../source/uart/uart_tx.c:130:6:uart0_putc	16	static
+../source/uart/uart_tx.c:131:6:uart0_print	16	static
+../source/uart/uart_tx.c:133:20:nib_to_hex	16	static
+../source/uart/uart_tx.c:134:6:uart0_puthex	24	static
+../source/uart/uart_tx.c:135:6:uart0_puthex_pref	24	static
+../source/uart/uart_tx.c:140:6:uart0_print_i32	40	static

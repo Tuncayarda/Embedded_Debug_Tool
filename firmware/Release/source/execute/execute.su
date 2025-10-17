@@ -1,0 +1,5 @@
+../source/execute/execute.c:123:20:finish_action	20	static
+../source/execute/execute.c:29:6:prepare_targets	20	static
+../source/execute/execute.c:42:5:start_action	16	static
+../source/execute/execute.c:79:5:run_action	8	static
+../source/execute/execute.c:137:5:execute	24	static

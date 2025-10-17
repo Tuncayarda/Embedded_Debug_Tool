@@ -1,0 +1,2 @@
+../source/spi/spi_init.c:15:6:SPI0_IRQHandler	24	static
+../source/spi/spi_init.c:85:6:spi_init	24	static

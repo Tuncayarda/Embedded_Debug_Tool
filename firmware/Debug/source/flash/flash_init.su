@@ -1,0 +1,4 @@
+../source/flash/flash_init.c:16:10:flash_init	16	static
+../source/flash/flash_init.c:22:10:flash_erase	16	static
+../source/flash/flash_init.c:36:10:flash_program	48	static
+../source/flash/flash_init.c:75:10:flash_read	24	static

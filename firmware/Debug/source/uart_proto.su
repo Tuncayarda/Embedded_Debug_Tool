@@ -1,0 +1,3 @@
+../source/uart_proto.c:11:12:read_u8	16	static
+../source/uart_proto.c:13:17:crc16_step	24	static
+../source/uart_proto.c:20:5:proto_read_frame	40	static

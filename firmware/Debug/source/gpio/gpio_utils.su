@@ -1,0 +1,11 @@
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_clock.h:551:20:CLOCK_EnableClock	24	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_port.h:463:20:PORT_SetPinMux	24	static
+../source/gpio/gpio_utils.c:4:26:port_base	16	static
+../source/gpio/gpio_utils.c:16:26:gpio_base	16	static
+../source/gpio/gpio_utils.c:28:6:gpio_enable_clock	16	static
+../source/gpio/gpio_utils.c:40:6:gpio_set_mux	24	static
+../source/gpio/gpio_utils.c:47:6:gpio_set_output	24	static
+../source/gpio/gpio_utils.c:54:6:gpio_set_input	24	static
+../source/gpio/gpio_utils.c:73:6:gpio_write_high	24	static
+../source/gpio/gpio_utils.c:80:6:gpio_write_low	24	static
+../source/gpio/gpio_utils.c:87:9:gpio_read	24	static

@@ -1,0 +1,10 @@
+../source/uart.c:13:6:uart0_init	24	static
+../source/uart.c:22:6:uart0_write	16	static
+../source/uart.c:26:6:uart0_print	16	static
+../source/uart.c:33:6:uart0_putc	16	static
+../source/uart.c:37:6:uart0_print_i32	40	static
+../source/uart.c:48:20:nib_to_hex	16	static
+../source/uart.c:52:6:uart0_puthex	24	static
+../source/uart.c:61:6:uart0_puthex_pref	16	static
+../source/uart.c:66:5:uart0_read_byte	16	static
+../source/uart.c:71:6:uart0_read_bytes	16	static

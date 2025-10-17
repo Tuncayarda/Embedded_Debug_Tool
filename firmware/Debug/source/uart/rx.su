@@ -1,0 +1,5 @@
+../source/uart/rx.c:21:24:rx_rb_wrap_add	16	static
+../source/uart/rx.c:24:6:uart0_rx_arm_chunk	8	static
+../source/uart/rx.c:33:6:uart_edma_cb	24	static
+../source/uart/rx.c:46:6:uart0_rx_poll	16	static
+../source/uart/rx.c:63:5:uart0_try_read_byte	16	static

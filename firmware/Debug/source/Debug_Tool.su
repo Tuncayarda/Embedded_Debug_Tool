@@ -1,0 +1,11 @@
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/CMSIS/core_cm4.h:2048:34:__NVIC_SystemReset	4	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:582:20:DSPI_ClearStatusFlags	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:622:20:DSPI_DisableInterrupts	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:757:20:DSPI_StartTransfer	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:768:20:DSPI_StopTransfer	16	static
+/Users/tuncay/Documents/MCUXpressoIDE_25.6.136/workspace/Debug_Tool/drivers/fsl_dspi.h:797:20:DSPI_FlushFifo	16	static
+../source/Debug_Tool.c:39:13:cspi_send_req	24	static
+../source/Debug_Tool.c:53:13:cspi_check_ring	24	static
+../source/Debug_Tool.c:69:13:cspi_shutdown	8	static
+../source/Debug_Tool.c:85:20:cspi_start_one_round	16	static
+../source/Debug_Tool.c:96:5:main	1112	static

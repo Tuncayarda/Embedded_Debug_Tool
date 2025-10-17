@@ -1,0 +1,7 @@
+../source/gpio/gpio_utils.c:32:6:gpio_enable_clock	0	static
+../source/gpio/gpio_utils.c:44:6:gpio_set_mux	0	static
+../source/gpio/gpio_utils.c:50:6:gpio_set_output	0	static
+../source/gpio/gpio_utils.c:56:6:gpio_set_input	16	static
+../source/gpio/gpio_utils.c:73:6:gpio_write_high	0	static
+../source/gpio/gpio_utils.c:79:6:gpio_write_low	0	static
+../source/gpio/gpio_utils.c:85:9:gpio_read	0	static
