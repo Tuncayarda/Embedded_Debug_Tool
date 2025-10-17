@@ -1,4 +1,3 @@
-```md
 # Embedded Debug Tool
 
 An end-to-end toolkit for **developing, testing, and debugging embedded systems**.  
@@ -47,41 +46,7 @@ Both sides speak a **simple framed protocol** (SOF | PROTO | MSG_ID | LEN | PAYL
 
 ## Repository Layout
 
-```
-
+```text
 /
 ├─ firmware/   → Microcontroller-side code (transport drivers, frame parser, handlers)
 └─ qt_app/     → Desktop Qt application (UI, protocol editors, logs, automation)
-
-```
-
----
-
-## Typical Workflow
-
-1. Connect to the target from **qt_app** and select the transport.
-2. Compose packets/frames and transmit to the **firmware**.
-3. Inspect responses in logs/hex view; verify CRC, timing, and content.
-4. Save common operations as **actions/sequences** for fast regression tests.
-
----
-
-## Extensibility Ideas
-
-- New protocol modules (CAN, RS-485, custom CRC/encodings)
-- Custom inspectors (register maps, sensor dashboards)
-- Automated test reports and session export
-- Plug-in system for target-specific command sets
-
----
-
-## Roadmap (Short List)
-
-- [ ] Sequence editor v1 (loop, delay, assert)
-- [ ] Packet templates & per-field encoders
-- [ ] Log bookmarking and diff
-- [ ] Cross-platform packaging (AppImage/MSIX/.dmg)
-- [ ] Reference targets for popular MCUs
-
----
-```
